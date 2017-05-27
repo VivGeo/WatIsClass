@@ -1,0 +1,9 @@
+<p> Hello, new world. You're at the page that creates rooms. </p>
+
+<form action="{% url 'openroom:generate'%}" method="post">
+  {% csrf_token %}
+
+  {{ form }}
+  
+  <input type="submit" value="Submit">
+</form> 
